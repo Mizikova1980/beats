@@ -1,0 +1,64 @@
+.section-form {
+    background: url(../img/4430b7c5c5f2bc6a5b367211b5907e94.png)  bottom center no-repeat;
+    color: white;
+}
+
+
+.form {
+    display: flex;
+    
+
+    &__col {
+        flex: 1;
+        margin-right: 27px;
+        display: flex;
+        flex-direction: column;
+
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+
+    &__row {
+        display: flex;
+        margin-bottom: 11px;
+
+    }
+
+    &__block {
+        flex: 1;
+        margin-right: 13px;
+
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+
+    &__title {
+        color: white;
+        margin-bottom: 6px;
+    }
+
+    &__input {
+        @include input;
+
+        &--textarea {
+            width: 452px;
+            height: 152px;
+            resize: none;
+            margin-bottom: 38px;
+        }
+    }
+
+    &__controls {
+        display: flex;
+        flex-wrap: wrap;
+        margin-bottom: 19px;
+    }
+
+    &__button {
+        margin-top: 27px;
+       
+    }
+
+}

@@ -1,0 +1,63 @@
+.benefits {
+    display: flex;
+    position: relative;
+
+
+    &__item {
+        flex: 1;
+        padding: 0 3%;
+
+        &::after {
+            content: url(../img/shape.svg);
+            position: absolute;
+            top: 50px;
+            transform: translateX(190%);
+        }
+
+        &:first-child {
+            padding-left: 0;
+        }
+       
+        &:last-child {
+            padding-right: 0;
+
+            &::after {
+                display: none;
+            }
+
+        }
+    }
+}
+
+
+.benefit {
+    text-align: center;
+
+    &__image-wrapper {
+        display: inline-block;
+        width: 128px;
+        height: 128px;
+        position: relative;
+        background: #F2F5F4;
+        border-radius: 50%;
+        overflow: hidden;
+        margin-bottom: 24px;
+    }
+
+    &__icon {
+        height: 60px;
+        width: 55px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+    }
+
+    &__title {
+        @include subtitle;
+        margin-bottom: 7px;
+    }
+
+
+
+}

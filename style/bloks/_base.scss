@@ -1,0 +1,141 @@
+
+html, body {
+  height: 100%;
+}
+
+body {
+	font-family: 'Play', sans-serif;
+    font-size: $baseFontSize;
+    line-height: 19px;
+	color: $grey;
+    -webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	margin: 0;
+	overflow-x: hidden;
+    position: relative;
+}
+
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-weight: normal;
+	margin: 0;
+}
+
+button {
+	border: 0;
+	cursor: pointer;
+	color: #FFFFFF;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+ul {
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+
+ul li {
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+
+p {
+	margin: 0;
+	padding: 0;
+  
+}
+
+a {
+	color: inherit;
+	cursor: pointer;
+	text-decoration: none;
+}
+
+img {
+	display: block;
+	max-width: 100%;
+	max-height: 100%;
+}
+
+input {
+	border: transparent;
+}
+
+.wrapper {
+    position: relative;
+    width: 100%;
+    min-width: $containerWidth+20px;
+    min-height: 100%;
+	display: flex;
+	flex-direction: column;
+    &__content {
+        display: flex;
+        min-height: 100%;
+	    flex: 1;
+        flex-direction: column;
+               
+    }
+}
+
+.container {
+	margin: 0px auto;
+	max-width: $containerWidth;
+	      
+}
+
+.container-footer {
+	display: flex;
+	align-items: center;
+	height: 100%;
+}
+
+.button {
+    padding: 19px 42px;
+    color: #FFFFFF;
+    background: #E01F3D;
+    width: 163px;
+    height: 54px;
+    border-radius: 30px;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 18px;
+
+	&:hover{
+		background: #CA1B36;
+	}
+
+	&--transparent {
+		background: transparent;
+		font-weight: 400;
+		font-size: 16px;
+
+		&:hover {
+			color: #CA1B36;
+			background: transparent;
+			font-weight: 400;
+			font-size: 16px;
+
+		}
+	}
+   
+}
+
+
+
+
+
+
+
+
+
+
+

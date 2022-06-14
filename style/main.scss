@@ -1,0 +1,29 @@
+$containerWidth: 1100px-160px;
+$baseFontSize: 16px;
+
+//colors
+$grey: #666666;
+$black: #292929;
+$red: #E01F3D;
+
+//z-index
+$z-fixed-menu: 100;
+
+
+@import "../style/normalize.css";
+@import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans&family=Play:wght@400;700&display=swap');
+@import "../style/bloks/_base.scss";
+@import "../style/bloks/mixins.scss";
+@import "../style/bloks/hero.scss";
+@import "../style/bloks/header.scss";
+@import "../style/bloks/features.scss";
+@import "../style/bloks/section.scss";
+@import "../style/bloks/headline.scss";
+@import "../style/bloks/benefits.scss";
+@import "../style/bloks/reviews.scss";
+@import "../style/bloks/avatar.scss";
+@import "../style/bloks/video.scss";
+@import "../style/bloks/form";
+@import "../style/bloks/radio";
+@import "../style/bloks/footer.scss";
+@import "../style/bloks/fixed-menu.scss";

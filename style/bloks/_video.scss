@@ -1,0 +1,30 @@
+.section-video {
+    position: relative;
+    background: #F8FAF9;
+
+    &:before {
+        content: url(../../img/circle.svg);
+        position: absolute;
+        display: block;
+        top: -18px;
+        left: 80px;
+    }
+
+    &:after {
+        content: url(../../img/polygon.svg);
+        position: absolute;
+        display: block;
+        bottom: -28px;
+        right: 90px;
+    }
+}
+
+.section__content {
+    height: 392px;
+    width: 662px;
+    margin-bottom: 106px;
+}
+
+.video__title {
+    margin-bottom: 44px;
+}
