@@ -10,7 +10,7 @@
         &::after {
             content: url(../img/shape.svg);
             position: absolute;
-            top: 50px;
+            top: 3.125rem;
             transform: translateX(190%);
         }
 
@@ -35,18 +35,18 @@
 
     &__image-wrapper {
         display: inline-block;
-        width: 128px;
-        height: 128px;
+        width: 8rem;
+        height: 8rem;
         position: relative;
         background: #F2F5F4;
         border-radius: 50%;
         overflow: hidden;
-        margin-bottom: 24px;
+        margin-bottom: 1.5rem;
     }
 
     &__icon {
-        height: 60px;
-        width: 55px;
+        height: 3.75rem;
+        width: 3.4375rem;
         position: absolute;
         top: 50%;
         left: 50%;
@@ -55,7 +55,7 @@
 
     &__title {
         @include subtitle;
-        margin-bottom: 7px;
+        margin-bottom: 0.4375rem;
     }
 
 

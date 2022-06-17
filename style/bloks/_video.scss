@@ -6,25 +6,25 @@
         content: url(../../img/circle.svg);
         position: absolute;
         display: block;
-        top: -18px;
-        left: 80px;
+        top: -1.125rem;
+        left: 5rem;
     }
 
     &:after {
         content: url(../../img/polygon.svg);
         position: absolute;
         display: block;
-        bottom: -28px;
-        right: 90px;
+        bottom: -1.75rem;
+        right: 5.625rem;
     }
 }
 
 .section__content {
-    height: 392px;
-    width: 662px;
-    margin-bottom: 106px;
+    height: 24.5rem;
+    width: 41.375rem;
+    margin-bottom: 6.625rem;
 }
 
 .video__title {
-    margin-bottom: 44px;
+    margin-bottom: 2.75rem;
 }

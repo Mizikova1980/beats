@@ -1,6 +1,6 @@
 .section {
     height: 100vh;
-    min-height: 650px;
+    min-height: 40.625rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -9,7 +9,7 @@
 
     &__title {
         @include title;
-        margin-bottom: 50px;
+        margin-bottom: 3.125rem;
         text-align: center;
         color: $black;
 
@@ -26,7 +26,7 @@
     &::after {
         content: url(../../img/triangle.svg);
         bottom: 0;
-        left: 60px;
+        left: 3.75rem;
         transform: translateX(50%);
         position: absolute;
     }

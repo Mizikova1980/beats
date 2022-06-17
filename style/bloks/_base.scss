@@ -1,12 +1,24 @@
 
-html, body {
+html {
   height: 100%;
+  font-size: $baseFontSize;
+
+
+  @include tablets {
+	font-size: $baseFontSize - 1px;
+  }
+
+  @include phones {
+	font-size: $baseFontSize - 2px;
+  }
+
+
 }
 
 body {
 	font-family: 'Play', sans-serif;
-    font-size: $baseFontSize;
-    line-height: 19px;
+    line-height: 1.1875rem;
+	height: 100%;
 	color: $grey;
     -webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
@@ -58,6 +70,7 @@ a {
 	color: inherit;
 	cursor: pointer;
 	text-decoration: none;
+	
 }
 
 img {
@@ -73,10 +86,10 @@ input {
 .wrapper {
     position: relative;
     width: 100%;
-    min-width: $containerWidth+20px;
     min-height: 100%;
 	display: flex;
 	flex-direction: column;
+	overflow: hidden;
     &__content {
         display: flex;
         min-height: 100%;
@@ -87,8 +100,10 @@ input {
 }
 
 .container {
-	margin: 0px auto;
+	margin: 0 auto;
+	width: 95%;
 	max-width: $containerWidth;
+	position: relative;
 	      
 }
 
@@ -99,15 +114,14 @@ input {
 }
 
 .button {
-    padding: 19px 42px;
+    padding: 1.1875rem 2.625rem;
     color: #FFFFFF;
     background: #E01F3D;
-    width: 163px;
-    height: 54px;
-    border-radius: 30px;
-    font-size: 16px;
+    width: 10.1875rem;
+    height: 3.375rem;
+    border-radius: 1.875rem;
     font-weight: 700;
-    line-height: 18px;
+    line-height: 1.125rem;
 
 	&:hover{
 		background: #CA1B36;
@@ -116,17 +130,18 @@ input {
 	&--transparent {
 		background: transparent;
 		font-weight: 400;
-		font-size: 16px;
+		
 
 		&:hover {
 			color: #CA1B36;
 			background: transparent;
 			font-weight: 400;
-			font-size: 16px;
+			
 
 		}
 	}
-   
+
+	   
 }
 
 

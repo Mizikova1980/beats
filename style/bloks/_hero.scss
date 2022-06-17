@@ -1,7 +1,7 @@
 .hero {
     background:  #F5F5F5;
     height: 100vh;
-    min-height: 652px;
+    min-height: 40.75rem;
     color: $black;
     position: relative;
     
@@ -9,11 +9,11 @@
         content: "";
         display: block;
         position: absolute;
-        height: 0px;
-        width: 46px;
-        border-top: 11px solid transparent;
+        height: 0;
+        width: 2.875rem;
+        border-top: 0.6875rem solid transparent;
         border-color: #C4C4C4;
-        bottom: -5px;
+        bottom: -0.3125rem;
         right: 12%;
         transform: rotate(-45deg);
        
@@ -23,36 +23,73 @@
 
 
     &__container {
-        background: url("../img/beats1.svg") no-repeat right center / 60% auto;
+        background: url("../img/beats1.svg") no-repeat right top rem(115px);
         display: flex;
         flex-direction: column;
         height: 100%;
-        padding: 24px 0px 65px 0px;
+        padding: 1.5rem 0 4.0625rem 0;
+
+        @include tablets {
+            background: none;
+        }
     }
    
     &__title-section {
         width: 45%;
-        margin-bottom: 88px;
+        margin-bottom: 5.5rem;
+
+        @include tablets {
+            width: 100%;
+            flex: 1;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+
+                &::before {
+                    content: url(../../img/beats2.png);
+                    display: block;
+                    padding: 10%
+
+            }
+
+
+        }
     }
+    
    
     &__main-title {
-    @include title;
-    margin-bottom: 22px;
+        @include title;
+        margin-bottom: 1.375rem;
+
+        @include tablets {
+            padding: 0 5%;
+        }
    }
 
    &__title-desc {
-    font-family: 'Alegreya Sans', sans-serif;
-    font-size: 21px;
-    line-height: 25px;
-    margin-bottom: 54px;
-    padding-right: 22%;
+        font-family: 'Alegreya Sans', sans-serif;
+        font-size: 1.3125rem;
+        line-height: 1.5625rem;
+        margin-bottom: 3.375rem;
+        padding-right: 22%;
+
+        @include tablets {
+            padding: 0 25%;
+        }
+    
    }
 
    &__icon-section {
     max-width: 55%;
-   }
 
+    @include tablets {
+        display: none;
+    }
+   }
+    
 }
+
+
 
 
 

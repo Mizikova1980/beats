@@ -1,11 +1,11 @@
 .fixed-menu {
     position: fixed;
-    top: 20%;
-    right: 3%;
+    top: 25%;
+    right: 20%;
     z-index: $z-fixed-menu;
     
     &__item {
-        margin-bottom: 5px;
+        margin-bottom: 0.3125rem;
 
         &--active {
             .fixed-menu__link {
@@ -18,11 +18,15 @@
         }
     }
 
+    @include tablets {
+        display: none;
+    }
+
     &__link {
-        width: 18px;
-        height: 18px;
+        width: 1.125rem;
+        height: 1.125rem;
         border-radius: 50%;
-        border: 1px solid transparent;
+        border: 0.0625rem solid transparent;
         display: block;
         position: relative;
 
@@ -30,8 +34,8 @@
             content: "";
             position: absolute;
             display: block;
-            width: 6px;
-            height: 6px;
+            width: 0.375rem;
+            height: 0.375rem;
             border-radius: 50%;
             background: $black;
             top: 50%;left: 50%;transform: translate(-50%,-50%);
