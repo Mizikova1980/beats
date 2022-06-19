@@ -20,10 +20,26 @@
 }
 
 .section__content {
-    height: 24.5rem;
-    width: 41.375rem;
     margin-bottom: 6.625rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 10%;
+    
+    
+
+    
+
+    &__img {
+        width: 100%;
+        height: 100%;
+        display: block;
+        object-fit: cover;
+        
+    }
 }
+
+
 
 .video__title {
     margin-bottom: 2.75rem;

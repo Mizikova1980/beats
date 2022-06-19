@@ -111,6 +111,12 @@ input {
 	display: flex;
 	align-items: center;
 	height: 100%;
+
+	@include phones {
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
 }
 
 .button {

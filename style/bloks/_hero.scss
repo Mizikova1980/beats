@@ -37,6 +37,8 @@
     &__title-section {
         width: 45%;
         margin-bottom: 5.5rem;
+        display: flex;
+        flex-direction: column;
 
         @include tablets {
             width: 100%;
@@ -46,12 +48,14 @@
             text-align: center;
 
                 &::before {
-                    content: url(../../img/beats2.png);
+                    content: "" ;
                     display: block;
-                    padding: 10%
+                    width: 323px;
+                    height: 323px;
+                    background: url(../img/beats2.png) center center / contain no-repeat;
+                    margin-bottom: 10%;
 
             }
-
 
         }
     }
@@ -75,6 +79,10 @@
 
         @include tablets {
             padding: 0 25%;
+        }
+
+        @include phones {
+            padding: 0 17%;
         }
     
    }
