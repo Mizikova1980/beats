@@ -471,7 +471,7 @@ input {
   position: relative;
 }
 .section-about::after {
-  content: url(../../img/triangle.svg);
+  content: url(../img/triangle.svg);
   bottom: 0;
   left: 3.75rem;
   -webkit-transform: translateX(50%);
@@ -767,14 +767,14 @@ input {
   background: #F8FAF9;
 }
 .section-video:before {
-  content: url(../../img/circle.svg);
+  content: url(../img/circle.svg);
   position: absolute;
   display: block;
   top: -1.125rem;
   left: 5rem;
 }
 .section-video:after {
-  content: url(../../img/polygon.svg);
+  content: url(../img/polygon.svg);
   position: absolute;
   display: block;
   bottom: -1.75rem;

@@ -3,7 +3,7 @@
     background: #F8FAF9;
 
     &:before {
-        content: url(../../img/circle.svg);
+        content: url(../img/circle.svg);
         position: absolute;
         display: block;
         top: -1.125rem;
@@ -11,7 +11,7 @@
     }
 
     &:after {
-        content: url(../../img/polygon.svg);
+        content: url(../img/polygon.svg);
         position: absolute;
         display: block;
         bottom: -1.75rem;
