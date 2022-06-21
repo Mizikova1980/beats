@@ -15,7 +15,7 @@
                     <header class="header">
                         <div class="logo">
                             <a href="#">
-                                <img src="img/logo.svg" alt="Логотип">
+                                <img src="img/logo.svg" alt="logo">
                             </a>
                         </div>
                         <nav class="menu">
@@ -58,14 +58,16 @@
                             </ul>
                         </nav>
                         <address class="contact">
-                            <a href="tel:+78009039090" class="phone header__phone"> 
-                                <span class="phone__icon">
-                                    <svg class="phone__icon">
-                                        <use xlink:href="./sprite.svg#phone" x="" y="" />
-                                    </svg>
-                                </span>
-                                <span class="phone__text">8 800 903 90 90</span>
-                            </a>
+                            <div class="phone header__phone">
+                                <a href="tel:+78009039090" class="phone__link"> 
+                                    <span class="phone__icon">
+                                        <svg class="phone__icon">
+                                            <use xlink:href="./sprite.svg#phone" x="" y="" />
+                                        </svg>
+                                    </span>
+                                    <span class="phone__text">8 800 903 90 90</span>
+                                </a>
+                            </div>
                         </address>
                         <a href="" class="hamburger">
                             <span class="hamburger__plank"></span>
@@ -195,7 +197,7 @@
                        <div class="reviews__display">
                             <div class="reviews__display-inner">
                                 <div class="reviews__avatar">
-                                    <img src="img/avatar1.svg" alt="user" class="reviews__avatar-img"> 
+                                    <img src="img/avatar1.svg" alt="avatar" class="reviews__avatar-img"> 
                                 </div>
                                 <article class="reviews__content">
                                     <h3 class="reviews__title">Отличный звук</h3>
@@ -213,17 +215,17 @@
                        <ul class="reviews__switcher">
                         <li class="reviews__switcher-item interactive-avatar--active">
                             <a href="#" class="interactive-avatar__link">
-                                <img src="img/user1.jpg" alt="user" class="interactive-avatar__img">
+                                <img src="img/user1.jpg" alt="avatar" class="interactive-avatar__img">
                             </a>
                         </li>
                         <li class="reviews__switcher-item interactive-avatar">
                             <a href="#" class="interactive-avatar__link">
-                                <img src="img/user2.png" alt="user" class="interactive-avatar__img">
+                                <img src="img/user2.png" alt="avatar" class="interactive-avatar__img">
                             </a>
                         </li>
                         <li class="reviews__switcher-item interactive-avatar">
                             <a href="#" class="interactive-avatar__link">
-                                <img src="img/user3.png" alt="user" class="interactive-avatar__img">
+                                <img src="img/user3.png" alt="avatar" class="interactive-avatar__img">
                             </a>
                         </li>
                        </ul>
@@ -235,7 +237,7 @@
                 <div class="container">
                     <h2 class="section__title video__title">как мы работаем</h2>
                     <div class="section__content">
-                        <img src="img/player.svg" alt="player" class="section__img">
+                        <img src="img/player.svg" alt="video" class="section__img">
                     </div>
                 </div>
             </section>
@@ -324,14 +326,16 @@
                                 <div class="contact__info">
                                     Москва, ул.Новый Арбат, д.31/12
                                 </div>
-                                <a href="tel:+78009039090" class="phone"> 
-                                    <span class="phone__icon">
-                                        <svg class="phone__icon">
-                                            <use xlink:href="./sprite.svg#phone" x="" y="" />
-                                        </svg>
-                                    </span>
-                                    <span class="phone__text">8 800 903 90 90</span>
-                                </a>
+                                <div class="phone">
+                                    <a href="tel:+78009039090" class="phone__link"> 
+                                        <span class="phone__icon">
+                                            <svg class="phone__icon">
+                                                <use xlink:href="./sprite.svg#phone" x="" y="" />
+                                            </svg>
+                                        </span>
+                                        <span class="phone__text">8 800 903 90 90</span>
+                                    </a>
+                                </div>
                             </address>
                         </div>
                         <div class="footer__col footer__col--right">
@@ -372,6 +376,37 @@
                 </footer>
             </section>
         </div>
+        <nav class="fixed-menu">
+            <ul class="fixed-menu__list">
+                <li class="fixed-menu__item fixed-menu__item--active">
+                    <a href="#" class="fixed-menu__link"></a>
+                </li>
+                <li class="fixed-menu__item">
+                    <a href="#" class="fixed-menu__link"></a>
+                </li>
+                <li class="fixed-menu__item">
+                    <a href="#" class="fixed-menu__link"></a>
+                </li>
+                <li class="fixed-menu__item">
+                    <a href="#" class="fixed-menu__link"></a>
+                </li>
+                <li class="fixed-menu__item">
+                    <a href="#" class="fixed-menu__link"></a>
+                </li>
+                <li class="fixed-menu__item">
+                    <a href="#" class="fixed-menu__link"></a>
+                </li>
+                <li class="fixed-menu__item">
+                    <a href="#" class="fixed-menu__link"></a>
+                </li>
+                <li class="fixed-menu__item">
+                    <a href="#" class="fixed-menu__link"></a>
+                </li>
+                <li class="fixed-menu__item">
+                    <a href="#" class="fixed-menu__link"></a>
+                </li>
+            </ul>
+        </nav>
         <!--
 <footer class="footer">
             <div class="container container-footer">
@@ -429,36 +464,6 @@
 
         -->
     </div>
-    <nav class="fixed-menu">
-        <ul class="fixed-menu__list">
-            <li class="fixed-menu__item fixed-menu__item--active">
-                <a href="#" class="fixed-menu__link"></a>
-            </li>
-            <li class="fixed-menu__item">
-                <a href="#" class="fixed-menu__link"></a>
-            </li>
-            <li class="fixed-menu__item">
-                <a href="#" class="fixed-menu__link"></a>
-            </li>
-            <li class="fixed-menu__item">
-                <a href="#" class="fixed-menu__link"></a>
-            </li>
-            <li class="fixed-menu__item">
-                <a href="#" class="fixed-menu__link"></a>
-            </li>
-            <li class="fixed-menu__item">
-                <a href="#" class="fixed-menu__link"></a>
-            </li>
-            <li class="fixed-menu__item">
-                <a href="#" class="fixed-menu__link"></a>
-            </li>
-            <li class="fixed-menu__item">
-                <a href="#" class="fixed-menu__link"></a>
-            </li>
-            <li class="fixed-menu__item">
-                <a href="#" class="fixed-menu__link"></a>
-            </li>
-        </ul>
-    </nav>
+    
 </body>
 </html>

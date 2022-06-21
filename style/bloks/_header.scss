@@ -7,6 +7,10 @@
     @include tablets {
         justify-content: space-between;
     }
+
+    @include phones {
+        margin-bottom: 0;
+    }
     
      
 }
@@ -26,31 +30,34 @@
     margin-right: 2.375rem;
 }
 
-.menu__list {
-    display: flex;
-    justify-content:space-between;
-    align-items: center;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin-right: 3.0625rem;
+.menu {
+
+    &__list {
+        display: flex;
+        justify-content:space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-right: 3.0625rem;
+       
+    }
+    &__item {
+        white-space: nowrap;
+        margin: 0 1.6875rem 0 0;
+        font-family: Alegreya Sans;
+        font-size: 1.125rem;
+        line-height: 1.25rem;
+        &:last-child {
+            margin-right: 0px;
+        }
+    }
     
-    
-   
-}
-.menu__item {
-    white-space: nowrap;
-    margin: 0 1.6875rem 0 0;
-    font-family: Alegreya Sans;
-    font-size: 1.125rem;
-    line-height: 1.25rem;
-    &:last-child {
-        margin-right: 0px;
+    &__link {
+        padding: 0 0 rem(15px) 0;
     }
 }
 
-.menu__link {
-    padding: 0 0 rem(15px) 0;
-}
+
 .phone {
     white-space: nowrap;
     display: flex;
@@ -63,16 +70,19 @@
         color: $red;
     }
    
+
+    &__link {
+        &:hover {
+            fill: $red;
+        }
+    }
    
     &__icon {
         flex-shrink: 0;
         width: 0.875rem;
         height: 0.875rem;
         margin-right: 0.375rem;
-
-        &:hover {
-            fill: $red;
-        }
+       
     }
 
     

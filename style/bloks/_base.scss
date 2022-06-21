@@ -93,6 +93,7 @@ input {
     &__content {
         display: flex;
         min-height: 100%;
+		width: 100%;
 	    flex: 1;
         flex-direction: column;
                
@@ -142,8 +143,6 @@ input {
 			color: #CA1B36;
 			background: transparent;
 			font-weight: 400;
-			
-
 		}
 	}
 

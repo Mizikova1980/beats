@@ -16,6 +16,10 @@
         &--white {
             color: white;
         }
+
+        @include phones {
+            margin-bottom: 0;
+        }
     }
   
    

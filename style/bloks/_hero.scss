@@ -54,6 +54,28 @@
                     height: 323px;
                     background: url(../img/beats2.png) center center / contain no-repeat;
                     margin-bottom: 10%;
+                  
+
+            }
+
+        }
+
+        @include phones {
+            width: 100%;
+            flex: 1;
+            justify-content: space-between;
+            align-items: center;
+            text-align: center;
+            margin-bottom: 0;
+
+                &::before {
+                    content: "" ;
+                    display: block;
+                    width: 323px;
+                    height: 323px;
+                    background: url(../img/beats2.png) center center / contain no-repeat;
+                    margin-bottom: 0;
+                  
 
             }
 
@@ -67,6 +89,10 @@
 
         @include tablets {
             padding: 0 5%;
+        }
+
+        @include phones {
+            margin-bottom: 0;
         }
    }
 
@@ -83,6 +109,7 @@
 
         @include phones {
             padding: 0 17%;
+            margin-bottom: 0;
         }
     
    }
