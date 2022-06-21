@@ -1,20 +1,27 @@
 .section {
     height: 100vh;
-    min-height: 40.625rem;
+    min-height: 652px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+
+    
     
 
     &__title {
         @include title;
-        margin-bottom: 3.125rem;
+        margin-bottom: 5%;
         text-align: center;
         color: $black;
 
         &--white {
             color: white;
+            margin-bottom: 6%;
+        }
+
+        @include tablets {
+            margin-bottom: 0;
         }
 
         @include phones {
@@ -27,6 +34,8 @@
 
 .section-about {
     position: relative;
+    height: 100vh;
+    
     &::after {
         content: url(../img/triangle.svg);
         bottom: 0;
