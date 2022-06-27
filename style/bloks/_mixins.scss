@@ -16,6 +16,14 @@
     line-height: 1.75rem;
 }
 
+@mixin name {
+    color: $black;
+    font-weight: bold;
+    font-size: 1.125rem;
+    line-height: 1.3125rem;
+}
+
+
 
 @mixin input {
     width: 100%;

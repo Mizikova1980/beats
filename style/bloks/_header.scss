@@ -26,39 +26,6 @@
     
 }
 
-.menu {
-    @include tablets {
-        display: none;
-    }
-    &__list {
-        display: flex;
-        justify-content:center;
-        align-items: center;
-        flex-wrap: wrap;
-        justify-content: center;
-        margin-right: 3.0625rem;
-
-        &:last-child {
-            margin-right: 0;
-        }
-       
-    }
-    &__item {
-        white-space: nowrap;
-        margin: 0 rem(30px) 0 0;
-        font-family: Alegreya Sans;
-        font-size: 1.125rem;
-        line-height: 1.25rem;
-        &:last-child {
-            margin-right: 0;
-        }
-    }
-    
-    &__link {
-        padding: 0 0 rem(15px) 0;
-    }
-}
-
 
 .phone {
     padding: 0 24px 0 0;

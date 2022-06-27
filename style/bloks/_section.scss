@@ -38,7 +38,7 @@
     
     &::after {
         content: url(../img/triangle.svg);
-        bottom: 0;
+        bottom: rem(-17px);
         left: 3.75rem;
         transform: translateX(50%);
         position: absolute;

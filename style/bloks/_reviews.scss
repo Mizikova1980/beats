@@ -88,10 +88,7 @@
     
     
     &__author {
-        color: $black;
-        font-weight: bold;
-        font-size: 1.125rem;
-        line-height: 1.3125rem;
+        @include name;
     }
 
 

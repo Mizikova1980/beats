@@ -10,7 +10,7 @@
 <body>
     <div class="wrapper">
         <div class="wrapper__content">
-            <section class="hero">
+            <section class="section hero">
                 <div class="container hero__container">
                     <header class="header">
                         <div class="logo">
@@ -69,7 +69,7 @@
                                 </a>
                             </div>
                         </address>
-                        <a href="" class="hamburger">
+                        <a href="" class="hamburger" id="openOverlay">
                             <span class="hamburger__plank"></span>
                             <span class="hamburger__plank"></span>
                             <span class="hamburger__plank"></span>
@@ -188,6 +188,266 @@
                             </div>
                         </li>
                     </ul> 
+                </div>
+            </section>
+            <section class="section section-products">
+                <div class="container product__container">
+                    <div class="products-slider">
+                        <div class="products-slider__arrows">
+                            <a href="#" class="products-slider__arrows products-slider__arrows--prev ">
+                                <img src="img/arrowprev.png" alt="arrow prev" class="arrow-img">
+                                <!--
+                                <svg class="products-slider__arrows--prev-icon">
+                                    <use xlink:href="./sprite.svg#prev" x="" y="" />
+                                </svg>-->
+
+                            </a>
+                        </div>
+                    </div>
+                        <div class="products">
+                            <ul class="products__list">
+                                <li class="products__item product">
+                                    <div class="product__photo">
+                                        <div class="products-slider products-slider--tablets">
+                                            <div class="products-slider__arrows">
+                                                <a href="#" class="products-slider__arrows products-slider__arrows--prev ">
+                                                    <img src="img/arrowprev.png" alt="arrow prev" class="arrow-img">
+                                                    <!--
+                                                    <svg class="products-slider__arrows--prev-icon">
+                                                        <use xlink:href="./sprite.svg#prev" x="" y="" />
+                                                    </svg>-->
+                    
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <img src="img/products/product1.png" alt="beats photo" class="product__img">
+                                        <div class="products-slider products-slider--tablets">
+                                            <div class="products-slider__arrows">
+                                                <a href="#" class="products-slider__arrows products-slider__arrows--next ">
+                                                    <img src="img/arrownext.png" alt="arrow next" class="arrow-img">
+                                                    <!--
+                                                    <svg class="products-slider__arrows--prev-icon">
+                                                        <use xlink:href="./sprite.svg#prev" x="" y="" />
+                                                    </svg>-->
+                    
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="product__card">
+                                        <div class="product__specifications">
+                                            <div class="dropdown">
+                                                <a href="#" class="dropdown__link">
+                                                    <svg class="product__specifications-icon">
+                                                        <use xlink:href="./sprite.svg#click" x="" y="" />
+                                                    </svg>
+                                                </a>
+                                                <div class="dropdown__menu">
+                                                    <ul class="dropdown__list">
+                                                        <li class="dropdown__item">
+                                                            <div class="dropdown__icon">
+                                                                <svg class="dropdown__icon">
+                                                                    <use xlink:href="./sprite.svg#bluetooth" x="" y="" />
+                                                                </svg>
+                                                            </div>
+                                                            <div class="dropdown__text">
+                                                                Bluetooth
+                                                            </div>
+                                                            <div class="dropdown__value">
+                                                                4.0
+                                                            </div>
+                                                        </li>
+                                                        <li class="dropdown__item">
+                                                            <div class="dropdown__icon">
+                                                                <svg class="dropdown__icon">
+                                                                    <use xlink:href="./sprite.svg#road" x="" y="" />
+                                                                </svg>
+                                                            </div>
+                                                            <div class="dropdown__text">
+                                                                Дальность 
+                                                            </div>
+                                                            <div class="dropdown__value">
+                                                                12 м
+                                                            </div>
+                                                        </li>
+                                                        <li class="dropdown__item">
+                                                            <div class="dropdown__icon">
+                                                                <svg class="dropdown__icon">
+                                                                    <use xlink:href="./sprite.svg#charger" x="" y="" />
+                                                                </svg>
+                                                            </div>
+                                                            <div class="dropdown__text">
+                                                                Зарядка
+                                                            </div>
+                                                            <div class="dropdown__value">
+                                                                3 ч
+                                                            </div>
+                                                        </li>
+                                                        <li class="dropdown__item">
+                                                            <div class="dropdown__icon">
+                                                                <svg class="dropdown__icon">
+                                                                    <use xlink:href="./sprite.svg#weight" x="" y="" />
+                                                                </svg>
+                                                            </div>
+                                                            <div class="dropdown__text">
+                                                                Вес
+                                                            </div>
+                                                            <div class="dropdown__value">
+                                                                215гр
+                                                            </div>
+                                                        </li>
+                                                        <li class="dropdown__item">
+                                                            <div class="dropdown__icon">
+                                                                <svg class="dropdown__icon">
+                                                                    <use xlink:href="./sprite.svg#warranty" x="" y="" />
+                                                                </svg>
+                                                            </div>
+                                                            <div class="dropdown__text">
+                                                                Гарантия
+                                                            </div>
+                                                            <div class="dropdown__value">
+                                                                1 год
+                                                            </div>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="product__title">
+                                            beats solo 3. цвет «атласное серебро»
+                                        </div>
+                                        <div class="product__desc">
+                                            <div class="product__text">
+                                                <p>
+                                                    Беспроводные наушники Beats Solo3 готовы к работе в любой момент. Включите их и поднесите к своему iPhone — они мгновенно подключатся к нему.
+                                                </p>
+                                            </div>
+                                            <ul class="product__futures">
+                                                    <li class="product__futures-item">
+                                                        <div class="feature__text">
+                                                            Зарядка
+                                                        </div>
+                                                        <div class="feature__value">
+                                                            2  часа
+                                                        </div>
+                                                    </li>
+                                                    <li class="product__futures-item">
+                                                        <div class="feature__text">
+                                                            Вес
+                                                        </div>
+                                                        <div class="feature__value">
+                                                            215 грамм
+                                                        </div>
+                                                    </li>
+                                                </ul>
+                                            <div class="product__price">
+                                                <div class="product__price-value">
+                                                    14 990 ₽
+                                                </div>
+                                                <div class="product__price-btn">
+                                                    <button class="button">ЗАКАЗАТЬ</button>
+                                                </div>
+                                                
+                                            </div>
+            
+            
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    <div class="products-slider">
+                         <div class="products-slider__arrows">
+                                <a href="#" class="products-slider__arrows products-slider__arrows--next ">
+                                    <img src="img/arrownext.png" alt="arrow next" class="arrow-img">
+                                    <!--
+                                    <svg class="products-slider__arrows--next-icon">
+                                        <use xlink:href="./sprite.svg#next" x="" y="" />
+                                    </svg>
+                                    -->
+                                </a>
+                        </div>
+                    </div>
+                    
+                </div>
+            </section>
+            <section class="section team">
+                <div class="container team__container">
+                    <h2 class="section__title">команда</h2>
+                    <ul class="team__list">
+                        <li class="team__card">
+                            <div class="team__photo">
+                                <img src="img/team/team1.png" alt="foto" class="team__img">
+                            </div>
+                            <a href="#" class="team__name">Борис Федорович</a>
+                            <div class="team__desc">
+                                <div class="team__content">
+                                    <div class="team__position">
+                                        Главный технолог
+                                    </div>
+                                    <div class="team__text">
+                                        <p>
+                                            Отвечает за вкусовые качества и калорийность.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="team__card">
+                            <div class="team__photo">
+                                <img src="img/team/team2.png" alt="foto" class="team__img">
+                            </div>
+                            <a href="#" class="team__name">Алла Иванова</a>
+                            <div class="team__desc">
+                                <div class="team__content">
+                                    <div class="team__position">
+                                        Специалист по упаковке
+                                    </div>
+                                    <div class="team__text">
+                                        <p>
+                                            Автор запоминающегося стиля наших батончиков.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="team__card">
+                            <div class="team__photo">
+                                <img src="img/team/team3.png" alt="foto" class="team__img">
+                            </div>
+                            <a href="#" class="team__name">Кирилл Матросов</a>
+                            <div class="team__desc">
+                                <div class="team__content">
+                                    <div class="team__position">
+                                        Оператор
+                                    </div>
+                                    <div class="team__text">
+                                        <p>
+                                            Разработал дизан наушников beats solo 3.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="team__card">
+                            <div class="team__photo">
+                                <img src="img/team/team4.png" alt="foto" class="team__img">
+                            </div>
+                            <a href="#" class="team__name">Мила Рыжкова</a>
+                            <div class="team__desc">
+                                <div class="team__content">
+                                    <div class="team__position">
+                                        PR, маркетинг
+                                    </div>
+                                    <div class="team__text">
+                                        <p>
+                                            По всем вопросам сотрудничества и рекламы писать только Миле. 
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
                 </div>
             </section>
             <section class="section section-reviews">
@@ -407,63 +667,60 @@
                 </li>
             </ul>
         </nav>
-        <!--
-<footer class="footer">
-            <div class="container container-footer">
-                <div class="footer__col footer__col--left">
-                    <address class="contact">
-                        <div class="contact__info">
-                            Москва, ул.Новый Арбат, д.31/12
-                        </div>
-                        <a href="tel:+78009039090" class="phone"> 
-                            <span class="phone__icon">
-                                <svg class="phone__icon">
-                                        <use xlink:href="./sprite.svg#phone" x="" y="" />
-                                 </svg>
-                            </span>
-                            <span class="phone__text">8 800 903 90 90</span>
-                        </a>
-                    </address>
-                </div>
-                <div class="footer__col footer__col--right">
-                    <div class="social">
-                        <ul class="social__list">
-                            <li class="social__item social__item--vk">
-                                <a href="#" class="social__link">
-                                    <svg class="social-icon">
-                                        <use xlink:href="./sprite.svg#vk" x="" y="" />
-                                    </svg>
-                                </a>
-                            </li>
-                            <li class="social__item social__item--fb">
-                                <a href="#" class="social__link">
-                                    <svg class="social-icon">
-                                        <use xlink:href="./sprite.svg#fb" x="" y="" />
-                                    </svg>
-                                </a>
-                            </li>
-                            <li class="social__item social__item--in">
-                                <a href="#" class="social__link">
-                                    <svg class="social-icon">
-                                        <use xlink:href="./sprite.svg#in" x="" y="" />
-                                    </svg>
-                                </a>
-                            </li>
-                            <li class="social__item social__item--tg">
-                                <a href="#" class="social__link">
-                                    <svg class="social-icon">
-                                        <use xlink:href="./sprite.svg#tg" x="" y="" />
-                                    </svg>
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </footer>
-
-        -->
     </div>
+    <script type ="html/template" id="overlayTemplate">
+        <div class="fullscreen-menu active">
+            <a href="#" class="fullscreen-menu__close" id="close">
+                <svg class="fullscreen-menu__close-icon">
+                    <use xlink:href="./sprite.svg#cross" x="" y="" />
+                </svg>
+            </a>
+            <nav class="menu menu--vertical">
+                <ul class="menu__list">
+                    <li class="menu__item">
+                        <a href="#" class="menu__link">
+                            О нас
+                        </a>
+                    </li>
+                    <li class="menu__item">
+                        <a href="#" class="menu__link">
+                            Наушники
+                        </a>
+                    </li>
+                    <li class="menu__item">
+                        <a href="#" class="menu__link">
+                            Команда
+                        </a>
+                    </li>
+                    <li class="menu__item">
+                        <a href="#" class="menu__link">
+                            Цвета
+                        </a>
+                    </li>
+                    <li class="menu__item">
+                        <a href="#" class="menu__link">
+                            Отзывы
+                        </a>
+                    </li>
+                    <li class="menu__item">
+                        <a href="#" class="menu__link">
+                            Как мы работаем 
+                        </a>
+                    </li>
+                    <li class="menu__item">
+                        <a href="#" class="menu__link">
+                            Контакты 
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </script>
+    <script src="js/menu.js"></script>
+
+
+
+
     
 </body>
 </html>

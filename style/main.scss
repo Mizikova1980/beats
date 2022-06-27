@@ -14,6 +14,7 @@ $red: #E01F3D;
 
 //z-index
 $z-fixed-menu: 100;
+$z-fullscreen-menu: 1000;
 
 
 @import "../style/normalize.css";
@@ -23,11 +24,15 @@ $z-fixed-menu: 100;
 @import "../style/bloks/mixins.scss";
 @import "../style/bloks/hero.scss";
 @import "../style/bloks/header.scss";
+@import "../style/bloks/menu.scss";
 @import "../style/bloks/hamburger";
 @import "../style/bloks/features.scss";
 @import "../style/bloks/section.scss";
 @import "../style/bloks/headline.scss";
 @import "../style/bloks/benefits.scss";
+@import "../style/bloks/products.scss";
+@import "../style/bloks/dropdown.scss";
+@import "../style/bloks/team.scss";
 @import "../style/bloks/reviews.scss";
 @import "../style/bloks/avatar.scss";
 @import "../style/bloks/video.scss";
@@ -36,3 +41,4 @@ $z-fixed-menu: 100;
 @import "../style/bloks/map.scss";
 @import "../style/bloks/footer.scss";
 @import "../style/bloks/fixed-menu.scss";
+@import "../style/bloks/fullscreen-menu.scss";

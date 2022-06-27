@@ -1,0 +1,72 @@
+
+.menu {
+    @include tablets {
+        display: none;
+    }
+    &__list {
+        display: flex;
+        justify-content:center;
+        align-items: center;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-right: 3.0625rem;
+
+        &:last-child {
+            margin-right: 0;
+        }
+       
+    }
+    &__item {
+        white-space: nowrap;
+        margin: 0 rem(30px) 0 0;
+        font-family: Alegreya Sans;
+        font-size: 1.125rem;
+        line-height: 1.25rem;
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+    
+    &__link {
+        padding: 0 0 rem(15px) 0;
+    }
+
+    
+}
+
+.menu--vertical {
+    
+
+    @include tablets {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+        
+        
+
+        & .menu__list {
+            flex-direction: column;
+            width: rem(300px);
+            height: rem(510px);
+            justify-content: space-around;
+            align-items: center;
+                        
+        }
+
+        & .menu__item {
+           color: white;
+            font-size: rem(36px);
+            margin: 0;
+            
+        }
+
+
+
+               
+        
+    }
+    
+    
+}
+
