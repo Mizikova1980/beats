@@ -102,12 +102,12 @@
         </defs> 
     </symbol>
 
-    <symbol id="prev" viewBox="0 0 15 29">
-        <path d="M14 28L1.91422 15.9142C1.13317 15.1332 1.13317 13.8668 1.91421 13.0858L14 1"/>
+    <symbol id="prev" viewBox="0 0 15 29" width="15" height="29" fill="none">
+        <path d="M14 28L1.91422 15.9142C1.13317 15.1332 1.13317 13.8668 1.91421 13.0858L14 1" stroke="black" stroke-width="2" stroke-linecap="round"/>
     </symbol>
 
-    <symbol id="next" viewBox="0 0 15 29">
-        <path d="M1 1L13.0858 13.0858C13.8668 13.8668 13.8668 15.1332 13.0858 15.9142L1 28"/>
+    <symbol id="next" viewBox="0 0 15 29" width="15" height="29" fill="none">
+        <path d="M1 1L13.0858 13.0858C13.8668 13.8668 13.8668 15.1332 13.0858 15.9142L1 28" stroke="black" stroke-width="2" stroke-linecap="round"/>
     </symbol>
 
     <symbol id="bluetooth" viewBox="0 0 14 24">

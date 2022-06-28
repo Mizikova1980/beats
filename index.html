@@ -190,186 +190,159 @@
                     </ul> 
                 </div>
             </section>
-            <section class="section section-products">
-                <div class="container product__container">
+            <section class="section products-section">
+                <div class="container products__container">
                     <div class="products-slider">
-                        <div class="products-slider__arrows">
-                            <a href="#" class="products-slider__arrows products-slider__arrows--prev ">
-                                <img src="img/arrowprev.png" alt="arrow prev" class="arrow-img">
-                                <!--
-                                <svg class="products-slider__arrows--prev-icon">
-                                    <use xlink:href="./sprite.svg#prev" x="" y="" />
-                                </svg>-->
-
+                        <div class="products-slider__arrow">
+                            <a href="#" class="products-slider__arrow products-slider__arrow--prev">
+                                <svg class="products-slider__arrow--prev">
+                                    <use xlink:href="./sprite.svg#prev"/>
+                                </svg>
                             </a>
                         </div>
-                    </div>
-                        <div class="products">
-                            <ul class="products__list">
-                                <li class="products__item product">
-                                    <div class="product__photo">
-                                        <div class="products-slider products-slider--tablets">
-                                            <div class="products-slider__arrows">
-                                                <a href="#" class="products-slider__arrows products-slider__arrows--prev ">
-                                                    <img src="img/arrowprev.png" alt="arrow prev" class="arrow-img">
-                                                    <!--
-                                                    <svg class="products-slider__arrows--prev-icon">
-                                                        <use xlink:href="./sprite.svg#prev" x="" y="" />
-                                                    </svg>-->
-                    
-                                                </a>
-                                            </div>
-                                        </div>
-                                        <img src="img/products/product1.png" alt="beats photo" class="product__img">
-                                        <div class="products-slider products-slider--tablets">
-                                            <div class="products-slider__arrows">
-                                                <a href="#" class="products-slider__arrows products-slider__arrows--next ">
-                                                    <img src="img/arrownext.png" alt="arrow next" class="arrow-img">
-                                                    <!--
-                                                    <svg class="products-slider__arrows--prev-icon">
-                                                        <use xlink:href="./sprite.svg#prev" x="" y="" />
-                                                    </svg>-->
-                    
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="product__card">
-                                        <div class="product__specifications">
-                                            <div class="dropdown">
-                                                <a href="#" class="dropdown__link">
-                                                    <svg class="product__specifications-icon">
-                                                        <use xlink:href="./sprite.svg#click" x="" y="" />
-                                                    </svg>
-                                                </a>
-                                                <div class="dropdown__menu">
-                                                    <ul class="dropdown__list">
-                                                        <li class="dropdown__item">
-                                                            <div class="dropdown__icon">
-                                                                <svg class="dropdown__icon">
-                                                                    <use xlink:href="./sprite.svg#bluetooth" x="" y="" />
-                                                                </svg>
-                                                            </div>
+                        <ul class="products__list">
+                            <li class="products__item product">
+                                <div class="product__photo">
+                                    <img src="img/products/product1.png" alt="beats photo" class="product__img">
+                                 </div>
+                                <div class="product__card">
+                                    <div class="product__specifications">
+                                         <div class="dropdown">
+                                            <a href="#" class="dropdown__link">
+                                                 <svg class="product__specifications-icon">
+                                                      <use xlink:href="./sprite.svg#click" x="" y="" />
+                                                </svg>
+                                            </a>
+                                            <div class="dropdown__menu">
+                                                <ul class="dropdown__list">
+                                                    <li class="dropdown__item">
+                                                        <div class="dropdown__icon">
+                                                            <svg class="dropdown__icon">
+                                                                <use xlink:href="./sprite.svg#bluetooth" x="" y="" />
+                                                            </svg>
+                                                        </div>
+                                                        <div class="dropdown__desc">
                                                             <div class="dropdown__text">
-                                                                Bluetooth
+                                                              Bluetooth
                                                             </div>
                                                             <div class="dropdown__value">
                                                                 4.0
                                                             </div>
-                                                        </li>
-                                                        <li class="dropdown__item">
-                                                            <div class="dropdown__icon">
-                                                                <svg class="dropdown__icon">
-                                                                    <use xlink:href="./sprite.svg#road" x="" y="" />
-                                                                </svg>
-                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                    <li class="dropdown__item">
+                                                        <div class="dropdown__icon">
+                                                            <svg class="dropdown__icon">
+                                                                <use xlink:href="./sprite.svg#road" x="" y="" />
+                                                            </svg>
+                                                        </div>
+                                                        <div class="dropdown__desc">
                                                             <div class="dropdown__text">
                                                                 Дальность 
                                                             </div>
                                                             <div class="dropdown__value">
                                                                 12 м
                                                             </div>
-                                                        </li>
-                                                        <li class="dropdown__item">
-                                                            <div class="dropdown__icon">
-                                                                <svg class="dropdown__icon">
-                                                                    <use xlink:href="./sprite.svg#charger" x="" y="" />
-                                                                </svg>
-                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                    <li class="dropdown__item">
+                                                        <div class="dropdown__icon">
+                                                            <svg class="dropdown__icon">
+                                                                <use xlink:href="./sprite.svg#charger" x="" y="" />
+                                                            </svg>
+                                                        </div>
+                                                        <div class="dropdown__desc">
                                                             <div class="dropdown__text">
                                                                 Зарядка
                                                             </div>
                                                             <div class="dropdown__value">
                                                                 3 ч
-                                                            </div>
-                                                        </li>
-                                                        <li class="dropdown__item">
-                                                            <div class="dropdown__icon">
-                                                                <svg class="dropdown__icon">
-                                                                    <use xlink:href="./sprite.svg#weight" x="" y="" />
-                                                                </svg>
-                                                            </div>
+                                                            </div> 
+                                                        </div>
+                                                    </li>
+                                                    <li class="dropdown__item">
+                                                        <div class="dropdown__icon">
+                                                            <svg class="dropdown__icon">
+                                                                <use xlink:href="./sprite.svg#weight" x="" y="" />
+                                                            </svg>
+                                                        </div>
+                                                        <div class="dropdown__desc">
                                                             <div class="dropdown__text">
                                                                 Вес
                                                             </div>
                                                             <div class="dropdown__value">
                                                                 215гр
                                                             </div>
-                                                        </li>
-                                                        <li class="dropdown__item">
-                                                            <div class="dropdown__icon">
-                                                                <svg class="dropdown__icon">
-                                                                    <use xlink:href="./sprite.svg#warranty" x="" y="" />
-                                                                </svg>
-                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                    <li class="dropdown__item">
+                                                        <div class="dropdown__icon">
+                                                            <svg class="dropdown__icon">
+                                                                <use xlink:href="./sprite.svg#warranty" x="" y="" />
+                                                            </svg>
+                                                        </div>
+                                                        <div class="dropdown__desc">
                                                             <div class="dropdown__text">
                                                                 Гарантия
                                                             </div>
                                                             <div class="dropdown__value">
                                                                 1 год
-                                                            </div>
-                                                        </li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="product__title">
-                                            beats solo 3. цвет «атласное серебро»
-                                        </div>
-                                        <div class="product__desc">
-                                            <div class="product__text">
-                                                <p>
-                                                    Беспроводные наушники Beats Solo3 готовы к работе в любой момент. Включите их и поднесите к своему iPhone — они мгновенно подключатся к нему.
-                                                </p>
-                                            </div>
-                                            <ul class="product__futures">
-                                                    <li class="product__futures-item">
-                                                        <div class="feature__text">
-                                                            Зарядка
-                                                        </div>
-                                                        <div class="feature__value">
-                                                            2  часа
-                                                        </div>
-                                                    </li>
-                                                    <li class="product__futures-item">
-                                                        <div class="feature__text">
-                                                            Вес
-                                                        </div>
-                                                        <div class="feature__value">
-                                                            215 грамм
+                                                            </div> 
                                                         </div>
                                                     </li>
                                                 </ul>
-                                            <div class="product__price">
-                                                <div class="product__price-value">
-                                                    14 990 ₽
-                                                </div>
-                                                <div class="product__price-btn">
-                                                    <button class="button">ЗАКАЗАТЬ</button>
-                                                </div>
-                                                
                                             </div>
-            
-            
                                         </div>
                                     </div>
-                                </li>
-                            </ul>
+                                    <div class="product__title">
+                                        beats solo 3. цвет «атласное серебро»
+                                    </div>
+                                    <div class="product__desc">
+                                        <div class="product__text">
+                                            <p>
+                                                Беспроводные наушники Beats Solo3 готовы к работе в любой момент. Включите их и поднесите к своему iPhone — они мгновенно подключатся к нему.
+                                            </p>
+                                        </div>
+                                        <ul class="product__futures">
+                                            <li class="product__futures-item">
+                                                <div class="feature__text">
+                                                    Зарядка
+                                                </div>
+                                                <div class="feature__value">
+                                                    2  часа
+                                                </div>
+                                            </li>
+                                            <li class="product__futures-item">
+                                                <div class="feature__text">
+                                                    Вес
+                                                </div>
+                                                <div class="feature__value">
+                                                    215 грамм
+                                                </div>
+                                            </li>
+                                        </ul>
+                                        <div class="product__price">
+                                            <div class="product__price-value">
+                                                14 990 ₽
+                                            </div>
+                                            <div class="product__price-btn">
+                                                <button class="button">ЗАКАЗАТЬ</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul> 
+                        <div class="products-slider__arrow"></div>
+                            <a href="#" class="products-slider__arrow products-slider__arrow--next">
+                                <svg class="products-slider__arrow--prev">
+                                    <use xlink:href="./sprite.svg#next"/>
+                                </svg>
+                            </a>
                         </div>
-                    <div class="products-slider">
-                         <div class="products-slider__arrows">
-                                <a href="#" class="products-slider__arrows products-slider__arrows--next ">
-                                    <img src="img/arrownext.png" alt="arrow next" class="arrow-img">
-                                    <!--
-                                    <svg class="products-slider__arrows--next-icon">
-                                        <use xlink:href="./sprite.svg#next" x="" y="" />
-                                    </svg>
-                                    -->
-                                </a>
-                        </div>
+
                     </div>
-                    
-                </div>
+                   
             </section>
             <section class="section team">
                 <div class="container team__container">

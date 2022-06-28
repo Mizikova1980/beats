@@ -1,68 +1,53 @@
-.section-products {
+.products-section {
     background: #F8FAF9;
+    position: relative;
+   
+}
+
+
+.products-slider{
+    display: flex;
     
-}
-.product__container {
-    display: flex;
-}
+    
+    &__arrow {
+        position: absolute;
+        width: 100%;
+        top: 46%;
+        z-index: 10;
 
-
-.products-slider {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    @include tablets {
-        display: none;
-    }
-
-    &--tablets {
-        
-        display: none;
         @include tablets {
-            display: flex;
+            top:29%
         }
         
-    }
-    
+        &--prev {
+            left:-2%;
 
-    &__arrows {
-        
-        top:50%;
-        width: 14px;
-        height: 27px;
-        
-        &--prev,
-        &--next {
-            &-icon {
-                fill: $black;
-                stroke: $black;
-                stroke-width: 2;
-                stroke-linecap: round;
-                width: rem(13px);
-                height: rem(27px);
-
+            @include tablets {
+                left: 18%;
             }
         }
-
-        
+        &--next {
+            left:100%;
+            @include tablets {
+                left: 80%;
+            }
+        }
+      
     }
 }
 
 
-.products {
-    display: flex;
 
-    &__list {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-    }
-}
+    
+
 
 
 .product {
     display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    
+    
 
     @include tablets {
         flex-direction: column;
@@ -71,28 +56,45 @@
     }
 
     &__photo {
-        width: 100%;
-        height: 100%;
-       
-
+        flex: 1.2;
+        
         @include tablets {
-            margin: 0 rem(64px);
+            margin: 0 rem(64px) rem(49px);
             width: auto;
             display: flex;
         }
     }
 
     &__img {
-        width: rem(452px);
-        height: rem(452px);
+        width: rem(425px);
+        height: rem(425px);
        border-radius: 50%;
 
        @include tablets {
-        width: rem(306px);
-        height: rem(306px);
+        width: rem(323px);
+        height: rem(323px);
         margin: 0 rem(64px);
        }
     }
+    &__card {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        flex: 1;
+        width: 100%;
+        height: 100%;
+        
+
+        @include tablets {
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+        
+    }
+
+ 
 
     &__specifications {
         display: block;
@@ -111,25 +113,15 @@
         }
     }
 
-    &__card {
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-
-        @include tablets {
-            align-items: center;
-            justify-content: center;
-            text-align: center;
-        }
-        
-    }
+    
 
     &__title {
         @include title;
         font-size: rem(36px);
         color: $black;
         line-height: 1.15;
-        margin-bottom: rem(24px);
+        margin-bottom: 25px;
+        
         
         @include tablets {
             font-size: rem(28px);
@@ -140,34 +132,48 @@
     &__desc {
         display: flex;
         flex-direction: column;
-        padding-right: rem(20px);
+        padding-right: rem(55px);
 
         @include tablets {
             padding: rem(15px) rem(60px);
+            align-items: center;
+            justify-content: center;
+            
         }
        
     }
 
     &__text {
         
-        margin-bottom: rem(25px);
+        margin-bottom: rem(28px);
     }
 
     &__futures {
         display: flex;
-        margin-bottom: rem(25px);
+        margin-bottom: rem(30px);
 
         @include tablets {
             align-items: center;
+            
         }
        
 
         &-item {
             display: flex;
             flex-direction: column;
-            flex: 1;
+            margin-right: rem(86px);
+
             @include tablets {
-                align-items: center;
+                margin-right: rem(50px);
+            }
+
+            &:last-child {
+                margin-right: 0;
+            }
+
+
+            @include tablets {
+                align-items: flex-start;
             }
         }
 
@@ -176,6 +182,7 @@
     &__price {
         display: flex;
         align-items: center;
+        
 
         @include tablets {
             justify-content: center;
@@ -184,7 +191,7 @@
         &-value {
             font-size: rem(36px);
             color: $black;
-            margin-right: rem(11px);
+            margin-right: rem(27px);
         }
     }
 

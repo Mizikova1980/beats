@@ -41,21 +41,35 @@
 
     &__item {
         display: inline-flex;
-        justify-content: space-between;
         align-items: center;
         margin-bottom: rem(28px);
+
     }
     
     &__icon {
         width: rem(24px);
         height: rem(24px);
+        margin-right: rem(16px);
+    }
+
+    &__desc {
+        display: flex;
+        flex: 1;
+        justify-content: space-between;
+        align-items: center;
     }
 
     &__text, &__value {
         font-size: rem(16px);
         color: #000000;
+        display: flex;
+        
 
     }
+
+   
+
+
 
 
 
