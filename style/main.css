@@ -1108,6 +1108,14 @@ input {
       -ms-flex-pack: center;
           justify-content: center;
 }
+.reviews__item {
+  display: none;
+}
+.reviews__item.active {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
 .reviews__display {
   background: #F8FAF9;
   display: -webkit-box;
@@ -1236,7 +1244,7 @@ input {
   overflow: hidden;
   position: relative;
 }
-.interactive-avatar--active {
+.interactive-avatar.active {
   height: 4.625rem;
   width: 4.625rem;
   border-radius: 50%;
