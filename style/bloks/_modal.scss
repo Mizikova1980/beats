@@ -1,0 +1,43 @@
+.fancybox-content {
+    vertical-align: middle;
+}
+
+
+
+
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #313131;
+    display: flex;
+    
+    display: none;
+
+    &__container {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    }
+    &__content {
+        width: rem(309px);
+        height: rem(176px);
+        background: white;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+
+    &__text {
+        color: #000000;
+        margin-bottom: rem(18px);
+        text-align: center;
+    }
+}

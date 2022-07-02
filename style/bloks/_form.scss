@@ -82,6 +82,10 @@
             }
 
         }
+        &.input-error {
+            border-color: hotpink;
+            
+        }
     }
 
     &__controls {
