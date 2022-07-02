@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Beats</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
     <link rel="stylesheet" href="style/main.css">
 </head>
 <body>
@@ -193,8 +194,8 @@
             <section class="section products-section">
                 <div class="container products__container">
                     <div class="products-slider">
-                        <div class="products-slider__arrow">
-                            <a href="#" class="products-slider__arrow products-slider__arrow--prev">
+                        <div class="products-slider__arrow products-slider__arrow--prev">
+                            <a href="#" class="products-slider__arrow--prev">
                                 <svg class="products-slider__arrow--prev">
                                     <use xlink:href="./sprite.svg#prev"/>
                                 </svg>
@@ -332,95 +333,304 @@
                                     </div>
                                 </div>
                             </li>
+                            <li class="products__item product">
+                                <div class="product__photo">
+                                    <img src="img/products/product2.png" alt="beats photo" class="product__img">
+                                 </div>
+                                <div class="product__card">
+                                    <div class="product__specifications">
+                                         <div class="dropdown">
+                                            <a href="#" class="dropdown__link">
+                                                 <svg class="product__specifications-icon">
+                                                      <use xlink:href="./sprite.svg#click" x="" y="" />
+                                                </svg>
+                                            </a>
+                                            <div class="dropdown__menu">
+                                                <ul class="dropdown__list">
+                                                    <li class="dropdown__item">
+                                                        <div class="dropdown__icon">
+                                                            <svg class="dropdown__icon">
+                                                                <use xlink:href="./sprite.svg#bluetooth" x="" y="" />
+                                                            </svg>
+                                                        </div>
+                                                        <div class="dropdown__desc">
+                                                            <div class="dropdown__text">
+                                                              Bluetooth
+                                                            </div>
+                                                            <div class="dropdown__value">
+                                                                4.0
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                    <li class="dropdown__item">
+                                                        <div class="dropdown__icon">
+                                                            <svg class="dropdown__icon">
+                                                                <use xlink:href="./sprite.svg#road" x="" y="" />
+                                                            </svg>
+                                                        </div>
+                                                        <div class="dropdown__desc">
+                                                            <div class="dropdown__text">
+                                                                Дальность 
+                                                            </div>
+                                                            <div class="dropdown__value">
+                                                                10 м
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                    <li class="dropdown__item">
+                                                        <div class="dropdown__icon">
+                                                            <svg class="dropdown__icon">
+                                                                <use xlink:href="./sprite.svg#charger" x="" y="" />
+                                                            </svg>
+                                                        </div>
+                                                        <div class="dropdown__desc">
+                                                            <div class="dropdown__text">
+                                                                Зарядка
+                                                            </div>
+                                                            <div class="dropdown__value">
+                                                                2 ч
+                                                            </div> 
+                                                        </div>
+                                                    </li>
+                                                    <li class="dropdown__item">
+                                                        <div class="dropdown__icon">
+                                                            <svg class="dropdown__icon">
+                                                                <use xlink:href="./sprite.svg#weight" x="" y="" />
+                                                            </svg>
+                                                        </div>
+                                                        <div class="dropdown__desc">
+                                                            <div class="dropdown__text">
+                                                                Вес
+                                                            </div>
+                                                            <div class="dropdown__value">
+                                                                215гр
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                    <li class="dropdown__item">
+                                                        <div class="dropdown__icon">
+                                                            <svg class="dropdown__icon">
+                                                                <use xlink:href="./sprite.svg#warranty" x="" y="" />
+                                                            </svg>
+                                                        </div>
+                                                        <div class="dropdown__desc">
+                                                            <div class="dropdown__text">
+                                                                Гарантия
+                                                            </div>
+                                                            <div class="dropdown__value">
+                                                                1 год
+                                                            </div> 
+                                                        </div>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="product__title">
+                                        beats solo pro. цвет «красный цитрус»
+                                    </div>
+                                    <div class="product__desc">
+                                        <div class="product__text">
+                                            <p>
+                                                Беспроводные наушники Solo Pro помогают настроиться на творчество. Для этого предусмотрено два режима прослушивания: режим с активным шумоподавлением и Прозрачный режим.
+                                            </p>
+                                        </div>
+                                        <ul class="product__futures">
+                                            <li class="product__futures-item">
+                                                <div class="feature__text">
+                                                    Зарядка
+                                                </div>
+                                                <div class="feature__value">
+                                                    2  часа
+                                                </div>
+                                            </li>
+                                            <li class="product__futures-item">
+                                                <div class="feature__text">
+                                                    Вес
+                                                </div>
+                                                <div class="feature__value">
+                                                    215 грамм
+                                                </div>
+                                            </li>
+                                        </ul>
+                                        <div class="product__price">
+                                            <div class="product__price-value">
+                                                14 990 ₽
+                                            </div>
+                                            <div class="product__price-btn">
+                                                <button class="button">ЗАКАЗАТЬ</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
                         </ul> 
-                        <div class="products-slider__arrow"></div>
-                            <a href="#" class="products-slider__arrow products-slider__arrow--next">
-                                <svg class="products-slider__arrow--prev">
+                        <div class="products-slider__arrow products-slider__arrow--next">
+                            <a href="#" class="products-slider__arrow--next">
+                                <svg class="products-slider__arrow--next">
                                     <use xlink:href="./sprite.svg#next"/>
                                 </svg>
                             </a>
                         </div>
-
                     </div>
-                   
+                </div>   
             </section>
-            <section class="section team">
-                <div class="container team__container">
-                    <h2 class="section__title">команда</h2>
-                    <ul class="team__list">
-                        <li class="team__card">
-                            <div class="team__photo">
-                                <img src="img/team/team1.png" alt="foto" class="team__img">
-                            </div>
-                            <a href="#" class="team__name">Борис Федорович</a>
-                            <div class="team__desc">
-                                <div class="team__content">
-                                    <div class="team__position">
-                                        Главный технолог
-                                    </div>
-                                    <div class="team__text">
-                                        <p>
-                                            Отвечает за вкусовые качества и калорийность.
-                                        </p>
+            <section class="section team-section">
+                <div class="container container__team">
+                    <h2 class="section__title team__title">команда</h2>
+                    <div class="team team--desctop">
+                        <ul class="team__list">
+                            <li class="team__card">
+                                <div class="team__photo">
+                                    <img src="img/team/team1.png" alt="foto" class="team__img">
+                                </div>
+                                <a href="#" class="team__name">Борис Федорович</a>
+                                <div class="team__desc">
+                                    <div class="team__content">
+                                        <div class="team__position">
+                                            Главный технолог
+                                        </div>
+                                        <div class="team__text">
+                                            <p>
+                                                Отвечает за вкусовые качества и калорийность.
+                                            </p>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                        </li>
-                        <li class="team__card">
-                            <div class="team__photo">
-                                <img src="img/team/team2.png" alt="foto" class="team__img">
-                            </div>
-                            <a href="#" class="team__name">Алла Иванова</a>
-                            <div class="team__desc">
-                                <div class="team__content">
-                                    <div class="team__position">
-                                        Специалист по упаковке
-                                    </div>
-                                    <div class="team__text">
-                                        <p>
-                                            Автор запоминающегося стиля наших батончиков.
-                                        </p>
+                            </li>
+                            <li class="team__card">
+                                <div class="team__photo">
+                                    <img src="img/team/team2.png" alt="foto" class="team__img">
+                                </div>
+                                <a href="#" class="team__name">Алла Иванова</a>
+                                <div class="team__desc">
+                                    <div class="team__content">
+                                        <div class="team__position">
+                                            Специалист по упаковке
+                                        </div>
+                                        <div class="team__text">
+                                            <p>
+                                                Автор запоминающегося стиля наших батончиков.
+                                            </p>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                        </li>
-                        <li class="team__card">
-                            <div class="team__photo">
-                                <img src="img/team/team3.png" alt="foto" class="team__img">
-                            </div>
-                            <a href="#" class="team__name">Кирилл Матросов</a>
-                            <div class="team__desc">
-                                <div class="team__content">
-                                    <div class="team__position">
-                                        Оператор
-                                    </div>
-                                    <div class="team__text">
-                                        <p>
-                                            Разработал дизан наушников beats solo 3.
-                                        </p>
+                            </li>
+                            <li class="team__card">
+                                <div class="team__photo">
+                                    <img src="img/team/team3.png" alt="foto" class="team__img">
+                                </div>
+                                <a href="#" class="team__name">Кирилл Матросов</a>
+                                <div class="team__desc ">
+                                    <div class="team__content">
+                                        <div class="team__position">
+                                            Оператор
+                                        </div>
+                                        <div class="team__text">
+                                            <p>
+                                                Разработал дизан наушников beats solo 3.
+                                            </p>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                        </li>
-                        <li class="team__card">
-                            <div class="team__photo">
-                                <img src="img/team/team4.png" alt="foto" class="team__img">
-                            </div>
-                            <a href="#" class="team__name">Мила Рыжкова</a>
-                            <div class="team__desc">
-                                <div class="team__content">
-                                    <div class="team__position">
-                                        PR, маркетинг
-                                    </div>
-                                    <div class="team__text">
-                                        <p>
-                                            По всем вопросам сотрудничества и рекламы писать только Миле. 
-                                        </p>
+                            </li>
+                            <li class="team__card">
+                                <div class="team__photo">
+                                    <img src="img/team/team4.png" alt="foto" class="team__img">
+                                </div>
+                                <a href="#" class="team__name">Мила Рыжкова</a>
+                                <div class="team__desc">
+                                    <div class="team__content">
+                                        <div class="team__position">
+                                            PR, маркетинг
+                                        </div>
+                                        <div class="team__text">
+                                            <p>
+                                                По всем вопросам сотрудничества и рекламы писать только Миле. 
+                                            </p>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                        </li>
-                    </ul>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="team team--mobile">
+                        <ul class="team__list">
+                            <li class="team__card">
+                                <a href="#" class="team__name">Борис Федорович</a>
+                                <div class="team__photo">
+                                    <img src="img/team/team1.png" alt="foto" class="team__img">
+                                </div>
+                                
+                                <div class="team__desc">
+                                    <div class="team__content">
+                                        <div class="team__position">
+                                            Главный технолог
+                                        </div>
+                                        <div class="team__text">
+                                            <p>
+                                                Отвечает за вкусовые качества и калорийность.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="team__card">
+                                <a href="#" class="team__name">Алла Иванова</a>
+                                <div class="team__photo">
+                                    <img src="img/team/team2.png" alt="foto" class="team__img">
+                                </div>
+                                <div class="team__desc">
+                                    <div class="team__content">
+                                        <div class="team__position">
+                                            Специалист по упаковке
+                                        </div>
+                                        <div class="team__text">
+                                            <p>
+                                                Автор запоминающегося стиля наших батончиков.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="team__card">
+                                <a href="#" class="team__name">Кирилл Матросов</a>
+                                <div class="team__photo">
+                                    <img src="img/team/team3.png" alt="foto" class="team__img">
+                                </div>
+                                <div class="team__desc ">
+                                    <div class="team__content">
+                                        <div class="team__position">
+                                            Оператор
+                                        </div>
+                                        <div class="team__text">
+                                            <p>
+                                                Разработал дизан наушников beats solo 3.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="team__card">
+                                <a href="#" class="team__name">Мила Рыжкова</a>
+                                <div class="team__photo">
+                                    <img src="img/team/team4.png" alt="foto" class="team__img">
+                                </div>
+                                <div class="team__desc">
+                                    <div class="team__content">
+                                        <div class="team__position">
+                                            PR, маркетинг
+                                        </div>
+                                        <div class="team__text">
+                                            <p>
+                                                По всем вопросам сотрудничества и рекламы писать только Миле. 
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </section>
             <section class="section section-reviews">
@@ -741,6 +951,9 @@
     </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="js/menu.js"></script>
+    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+    <script src="js/products.js"></script>
+    <script src="js/team.js"></script>
     <script src="js/reviews.js"></script>
 
 

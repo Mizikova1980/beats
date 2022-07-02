@@ -147,5 +147,9 @@
         <path d="M6.81415 16.1908H13.6544V17.597H6.81415V16.1908Z" fill="black"/>
     </symbol>
 
+    <symbol id="triangle" viewBox="0 0 8 7">
+        <path d="M4 7L0.102887 0.249999L7.89711 0.25L4 7Z" fill="#E01F3D"/>
+    </symbol>
+
 </svg>
 

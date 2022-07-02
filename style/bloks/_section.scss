@@ -34,7 +34,7 @@
 
 .section-about {
     position: relative;
-    height: 100vh;
+    
     
     &::after {
         content: url(../img/triangle.svg);
@@ -42,6 +42,7 @@
         left: 3.75rem;
         transform: translateX(50%);
         position: absolute;
+        z-index: 10;
     }
 }
 
