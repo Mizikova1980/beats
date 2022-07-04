@@ -1513,7 +1513,7 @@ input {
   width: 100%;
   height: 3.625;
   border-radius: 0.25rem;
-  border: 0.1875 solid transparent;
+  border: 1px solid transparent;
   padding: 1.125rem 0.75rem;
 }
 .form__input:focus {
@@ -1535,9 +1535,6 @@ input {
   .form__input--textarea {
     margin-bottom: 0;
   }
-}
-.form__input.input-error {
-  border-color: hotpink;
 }
 .form__controls {
   display: -webkit-box;
@@ -1569,6 +1566,10 @@ input {
         -ms-flex-pack: center;
             justify-content: center;
   }
+}
+
+.input-error {
+  border-color: hotpink;
 }
 
 .radio {

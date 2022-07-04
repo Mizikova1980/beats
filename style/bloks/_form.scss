@@ -2,6 +2,7 @@
     background: url(../img/4430b7c5c5f2bc6a5b367211b5907e94.png)  bottom center no-repeat;
     color: white;
     justify-content: space-around;
+    
 }
 
 
@@ -82,10 +83,7 @@
             }
 
         }
-        &.input-error {
-            border-color: hotpink;
-            
-        }
+        
     }
 
     &__controls {
@@ -114,4 +112,9 @@
 
    
 
+}
+
+.input-error {
+    border-color: hotpink;
+    
 }
