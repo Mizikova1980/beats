@@ -6,20 +6,26 @@
     
     &__title {
         margin-bottom: 2%;
+
+        @include phones {
+            margin-bottom: rem(11px);
+        }
         
     }
 
     &__subtitle {
-        padding: 0 20%;
+        margin: 0 20%;
+        @include tablets {
+            margin: 0 rem(91px) rem(52px) rem(91px);
+        }
+    
+        @include phones {
+            margin: 0;
+        }
+
     }
     
-    @include tablets {
-        margin-bottom: 0;
-    }
-
-    @include phones {
-        margin-bottom: 0;
-    }
+    
 
 }
 

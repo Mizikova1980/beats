@@ -3,15 +3,9 @@ html {
   height: 100%;
   font-size: $baseFontSize;
 
-
-  @include tablets {
-	font-size: $baseFontSize - 1px;
-  }
-
   @include phones {
-	font-size: $baseFontSize - 2px;
+	font-size: 3.33333vmin;
   }
-
 
 }
 
@@ -148,6 +142,10 @@ input {
 	}
 
 	   
+}
+
+.fancybox-active, .locked {
+	overflow: hidden;
 }
 
 

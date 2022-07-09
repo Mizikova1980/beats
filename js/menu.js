@@ -5,6 +5,7 @@ const create = createModal();
 openMenu.addEventListener ("click", e => {
     e.preventDefault();
     body.appendChild(create);
+    body.classList.add("locked");
 })
 
 function createModal () {
@@ -20,6 +21,7 @@ function createModal () {
     closeElement.addEventListener("click", e => {
         e.preventDefault();
         body.removeChild(overlayElement);
+        body.classList.remove("locked");
     }
     )
 

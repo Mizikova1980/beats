@@ -6,8 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Beats</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
-    <link rel="stylesheet" href="jquery.fancybox.min.css">
-    <link rel="stylesheet" href="style/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.css">
+    <link rel="stylesheet" href="css/main.css">
     
 </head>
 <body>
@@ -636,11 +636,52 @@
                 </div>
             </section>
             <section class="section colors-section">
-                
+                <h2 class="section__title colors__title">Меню</h2>
+                <ul class="colors__list">
+                    <li class="color__item color">
+                        <a href="#" class="color__title color__title--silver">
+                            <h3 class="color__title-text">«Атласное серебро»</h3>
+                        </a>
+                        <div class="color__content">
+                            <div class="color__container">
+                                <p>
+                                    Наушники Beats Solo3 могут работать до 40 часов без подзарядки, чтобы вы могли пользоваться ими каждый день. 5‑минутной зарядки Fast Fuel хватит ещё на 3 часа воспроизведения. Фирменное звучание Beats в наушниках с технологией Bluetooth класса 1 будет сопровождать вас повсюду — куда бы вы ни отправились. 
+                                    Расположение чашек с мягкими амбушюрами можно регулировать — вы сможете носить их целый день.
+                                </p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="color__item color">
+                        <a href="#" class="color__title color__title--black">
+                            <h3 class="color__title-text">«Чёрный матовый»</h3>
+                        </a>
+                        <div class="color__content">
+                            <div class="color__container">
+                                <p>
+                                    Наушники Beats Solo3 могут работать до 40 часов без подзарядки, чтобы вы могли пользоваться ими каждый день. 5‑минутной зарядки Fast Fuel хватит ещё на 3 часа воспроизведения. Фирменное звучание Beats в наушниках с технологией Bluetooth класса 1 будет сопровождать вас повсюду — куда бы вы ни отправились. 
+                                    Расположение чашек с мягкими амбушюрами можно регулировать — вы сможете носить их целый день.
+                                </p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="color__item color">
+                        <a href="#" class="color__title color__title--red">
+                            <h3 class="color__title-text">«Красный цитрус»</h3>
+                        </a>
+                        <div class="color__content">
+                            <div class="color__container">
+                                <p>
+                                    Наушники Beats Solo3 могут работать до 40 часов без подзарядки, чтобы вы могли пользоваться ими каждый день. 5‑минутной зарядки Fast Fuel хватит ещё на 3 часа воспроизведения. Фирменное звучание Beats в наушниках с технологией Bluetooth класса 1 будет сопровождать вас повсюду — куда бы вы ни отправились. 
+                                    Расположение чашек с мягкими амбушюрами можно регулировать — вы сможете носить их целый день.
+                                </p>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
             </section>
             <section class="section section-reviews">
                 <div class="container">
-                    <h2 class="section__title">отзывы</h2>
+                    <h2 class="section__title ">отзывы</h2>
                     <div class="reviews">
                        <div class="reviews__display">
                         <ul class="reviews__list">
@@ -730,11 +771,24 @@
                 </div>
 
             </section>
-            <section class="section section-video">
-                <div class="container">
-                    <h2 class="section__title video__title">как мы работаем</h2>
-                    <div class="section__content">
-                        <img src="img/player.svg" alt="video" class="section__img">
+            <section class="section section-player">
+                <div class="container container-player">
+                    <h2 class="section__title player__title">как мы работаем</h2>
+                    <div class="player">
+                        <div class="player__wrapper">
+                            <div class="player__elem" id="yt-player"></div>
+                            <div class="player__splash"></div>
+                        </div>
+                        <div class="player__controls">
+                            <button class="player__start"></button>
+                            <div class="player__playback">
+                                <button class="player__playback-button"></button>
+                            </div>
+                            <div class="player__duration">
+                                <span class="player__duration-completed">0:00</span>
+                                <span class="player__duration-estimate">0:00</span>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </section>
@@ -966,9 +1020,12 @@
     <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
     <script src="js/products.js"></script>
     <script src="js/team.js"></script>
+    <script src="js/colors.js"></script>
     <script src="js/reviews.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
     <script src="js/modal.js"></script>
+    <script src="https://www.youtube.com/iframe_api"></script>
+    <script src="js/player.js"></script>
     <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU"></script>
     <script src="js/map.js"></script>
 

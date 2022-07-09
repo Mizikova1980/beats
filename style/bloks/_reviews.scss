@@ -35,7 +35,8 @@
         }
 
         @include tablets {
-            padding: 2.625rem 2.625rem 2.625rem 2.625rem; 
+            padding: 2.625rem 2.625rem 2.625rem 2.625rem;
+            margin-bottom: rem(32px);
         }
 
     }
@@ -87,6 +88,7 @@
     &__title {
         @include subtitle;
         margin-bottom: 1.6875rem;
+        
     }
 
     &__text {

@@ -42,6 +42,10 @@
             }
 
         }
+        
+        @include phones {
+            padding: rem(19px);
+        }
         @include phones {
             padding: 0;
         }

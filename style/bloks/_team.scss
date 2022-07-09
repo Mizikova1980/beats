@@ -1,7 +1,3 @@
-.team-section {
-    height: 100%;
-
-}
 
 .container__team {
     display: flex;
@@ -79,6 +75,7 @@
             justify-content: center;
             align-items: center;
             margin-right: 0;
+            max-width: rem(222px);
             
             &.active .team__photo {
                display: block;
@@ -106,7 +103,7 @@
         justify-content: center;
         align-items: center;
         visibility: hidden;
-        width: 50%;
+        width: 100%;
        
 
         @include tablets {
@@ -164,6 +161,12 @@
             font-weight: bold;
             font-size: rem(18px);
 
+        }
+    }
+
+    &__text {
+        @include tablets {
+            padding-bottom: rem(20px);
         }
     }
         

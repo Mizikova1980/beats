@@ -16,7 +16,7 @@
         z-index: 10;
 
         @include tablets {
-            top:29%
+            top:rem(150px);
         }
         
         &--prev {
@@ -25,11 +25,17 @@
             @include tablets {
                 left: 18%;
             }
+            @include phones {
+                left: 5%;
+            }
         }
         &--next {
             left:100%;
             @include tablets {
                 left: 80%;
+            }
+            @include phones {
+                left: 92%;
             }
         }
       
@@ -67,17 +73,22 @@
             width: auto;
             display: flex;
         }
+        @include tablets {
+            margin: 0;
+            width: auto;
+            display: flex;
+        }
     }
 
     &__img {
         width: rem(425px);
         height: rem(425px);
-       border-radius: 50%;
+        border-radius: 50%;
 
        @include tablets {
-        width: rem(323px);
-        height: rem(323px);
-        margin: 0 rem(64px);
+            width: rem(323px);
+            height: rem(323px);
+            margin: 0 rem(64px);
        }
     }
     &__card {
@@ -140,6 +151,13 @@
 
         @include tablets {
             padding: rem(15px) rem(60px);
+            align-items: center;
+            justify-content: center;
+            
+        }
+
+        @include phones {
+            padding: rem(15px) rem(34px);
             align-items: center;
             justify-content: center;
             

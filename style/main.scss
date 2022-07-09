@@ -15,12 +15,13 @@ $red: #E01F3D;
 //z-index
 $z-fixed-menu: 100;
 $z-fullscreen-menu: 1000;
+$z-modal: 500;
 
-
-@import "../style/normalize.css";
 @import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans&family=Play:wght@400;700&display=swap');
+@import "./normalize.scss";
+
 @import "../style/media.scss";
-@import "../style/bloks/_base.scss";
+@import "../style/bloks/base.scss";
 @import "../style/bloks/mixins.scss";
 @import "../style/bloks/hero.scss";
 @import "../style/bloks/header.scss";
@@ -36,7 +37,7 @@ $z-fullscreen-menu: 1000;
 @import "../style/bloks/colors.scss";
 @import "../style/bloks/reviews.scss";
 @import "../style/bloks/avatar.scss";
-@import "../style/bloks/video.scss";
+@import "../style/bloks/player.scss";
 @import "../style/bloks/form";
 @import "../style/bloks/radio";
 @import "../style/bloks/map.scss";

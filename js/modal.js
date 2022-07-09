@@ -43,15 +43,6 @@ $(document).ready(() => {
 
             request.done (data => {
                 content.text(data.message);
-                $.fancybox.open({
-                    src: "#modal",
-                     type: "inline",
-                     loop: false,
-                     arrows: false,
-                     infobar: false,
-                     toolbar: false,
-                     modal: true,
-                 });
             });
 
             request.fail(data => {

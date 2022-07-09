@@ -7,6 +7,9 @@
     align-items: center;
 
     
+
+
+    
     
 
     &__title {
@@ -21,11 +24,11 @@
         }
 
         @include tablets {
-            margin-bottom: 0;
+            margin-bottom: rem(33px);
         }
 
         @include phones {
-            margin-bottom: 0;
+            margin-bottom: rem(30px);
         }
     }
   
