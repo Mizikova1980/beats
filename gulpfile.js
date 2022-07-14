@@ -15,7 +15,7 @@ const uglify = require('gulp-uglify');
 const svgo = require('gulp-svgo');
 const svgSprite = require('gulp-svg-sprite');
 const gulpif = require('gulp-if');
-const {SRC_PATH, DIST_PATH, STYLE_LIBS, JS_LIBS} = require('./gulp.config');
+const {SRC_PATH, DIST_PATH, STYLE_LIBS, JS_LIBS, DOCS_PATH} = require('./gulp.config');
 
 const env = process.env.NODE_ENV;
 
@@ -31,18 +31,21 @@ task( 'clean', () => {
 task('copy:html', () => {
     return src(`${SRC_PATH}/*.html`)
     .pipe(dest(DIST_PATH))
+    .pipe(gulpif(env === 'prod', dest(DOCS_PATH)))
     .pipe(reload({stream: true}))
    });
 
    task('copy:img', () => {
     return src(`${SRC_PATH}/img/*`)
     .pipe(dest(`${DIST_PATH}/img`))
+    .pipe(gulpif(env === 'prod', dest(`${DOCS_PATH}/img`)))
     .pipe(reload({stream: true}))
    });
 
    task('copy:video', () => {
     return src(`${SRC_PATH}/video/*`)
     .pipe(dest(`${DIST_PATH}/video`))
+    .pipe(gulpif(env === 'prod', dest(`${DOCS_PATH}/video`)))
     .pipe(reload({stream: true}))
    });
   
@@ -69,6 +72,7 @@ task('copy:html', () => {
       .pipe(gulpif(env === 'prod', cleanCSS()))
       .pipe(gulpif(env === 'dev', sourcemaps.write()))
       .pipe(dest(DIST_PATH))
+      .pipe(gulpif(env === 'prod', dest(DOCS_PATH)))
       .pipe(reload({stream: true}))
    });
 
@@ -82,6 +86,7 @@ task('copy:html', () => {
       .pipe(gulpif(env === 'prod',uglify()))
       .pipe(gulpif(env === 'dev', sourcemaps.write()))
       .pipe(dest(DIST_PATH))
+      .pipe(gulpif(env === 'prod', dest(DOCS_PATH)))
       .pipe(reload({stream: true}))
    });
 
@@ -103,6 +108,7 @@ task('copy:html', () => {
         }
     }))
     .pipe(dest(`${DIST_PATH}/img/icons`))
+    //.pipe(gulpif(env === 'prod', dest(DOCS_PATH)))
    });
 
 
