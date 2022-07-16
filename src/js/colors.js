@@ -10,11 +10,18 @@
         const paddingLeft = parseInt(textContainer.css("padding-left"));
         const paddingRight = parseInt(textContainer.css("padding-right"));
     
-        const isMobile = window.matchMedia("(max-width: 768px)").matches;
+        const isTablet = window.matchMedia("(max-width: 768px)").matches;
+        const isMobile = window.matchMedia("(max-width: 480px)").matches;
     
-        if (isMobile) {
+        if (isTablet) {
             reqItemWidth = screenWidth - titlesWidth;
-        } else {
+        }
+        
+        if (isMobile) {
+            reqItemWidth = screenWidth - titlesBlocks.width();
+        } 
+        
+        if(!isTablet && !isMobile) {
             reqItemWidth =500;
         }
         
@@ -38,7 +45,7 @@
         const hiddenContent = item.find(".color__content");
         const reqWidth = mesureWidth(item);
        
-        item.addClass("active");
+        item.addClass("active").siblings().addClass("passive");
         hiddenContent.width(reqWidth.container);
        
     }

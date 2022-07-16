@@ -3,6 +3,8 @@
     const openMenu = document.querySelector("#openOverlay");
     const body = document.body;
     const create = createModal();
+    const sections = $(".section");
+    
     
     openMenu.addEventListener ("click", e => {
         e.preventDefault();
@@ -24,11 +26,20 @@
             e.preventDefault();
             body.removeChild(overlayElement);
             body.classList.remove("locked");
-        }
-        )
+        })
+
+        overlayElement.addEventListener('click', e => {
+            e.preventDefault();
+            if(e.target.classList.contains("menu__link")) {
+                body.removeChild(overlayElement);
+                body.classList.remove('locked');
+            }
+
+        })
     
         return overlayElement;
     }
+    
 })()
 
 

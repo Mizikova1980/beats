@@ -110,7 +110,11 @@
 }
 
 #seek-bar {
-    background: linear-gradient(90deg, #E01F3D 0%, #333333 100%);
+    background: linear-gradient(90deg, #E01F3D 0%, #333333 0%);
+}
+
+#volume-bar {
+    background: linear-gradient(90deg, #E01F3D 100%, #333333 0%);
 }
 
 #yt-player {

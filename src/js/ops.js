@@ -41,7 +41,10 @@
     
     const performTransition = sectionEq => {
         
-        if (inScroll) return;
+        if (inScroll
+            || document.body.classList.contains('locked')
+            || document.body.classList.contains('fancybox-active')
+            ) return;
     
         const transitionOver = 1000;
         const mouseInertiaOver = 300;
@@ -135,12 +138,15 @@
     
     $(".wrapper").on("touchmove", e => e.preventDefault());
     
-    $("[data-scroll-to]").click( e => {
+    $(document).on('click', "[data-scroll-to]", e => {
         e.preventDefault();
     
         const $this = $(e.currentTarget);
         const target = $this.attr("data-scroll-to");
         const reqSection = $(`[data-section-id = ${target}]`);
+       // console.log('data-scroll-to', target, reqSection, reqSection.index());
+        document.body.classList.remove("locked");
+        document.body.classList.remove('fancebox-active');
     
         performTransition(reqSection.index());
     });
@@ -158,7 +164,9 @@
                 if(direction == "up") scrollDirection = "next";
                 if(direction == "down") scrollDirection = "prev";
         
-                scrolller[scrollDirection]();
+                if (scrollDirection) {
+                    scrolller[scrollDirection]();
+                }
             }
         });
         

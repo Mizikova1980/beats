@@ -160,12 +160,18 @@
                 top: -11%;
 
             }
-
         }
 
-        
-        
-    }
+        @include phones {
+            &::after {
+                content: url("data:image/svg+xml,%3Csvg width='8' height='7' viewBox='0 0 8 7' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M4 7L0.102887 0.249999L7.89711 0.25L4 7Z' fill='%23E01F3D'/%3E%3C/svg%3E");
+                margin-left: 2px;
+                position: absolute;
+                top: -11%;
+
+            }
+        }
+        }
     
     &__position {
         color: $black;
@@ -177,12 +183,12 @@
 
         }
     }
-
     &__text {
         @include tablets {
             padding-bottom: rem(20px);
         }
     }
+}
         
 
-}
+

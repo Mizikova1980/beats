@@ -45,7 +45,7 @@
         });
     
         // Event listener for the seek bar
-        seekBar.addEventListener("change", function() {
+        seekBar.addEventListener("input", function() {
             // Calculate the new time
             const time = video.duration * (seekBar.value / 100);
         
@@ -61,6 +61,7 @@
         
             // Update the slider value
             seekBar.value = value;
+            seekBar.style.background = `linear-gradient(90deg, #E01F3D ${value}%, #333333 ${value}%)`;
     
         });
     
@@ -75,9 +76,15 @@
         });
     
         // Event listener for the volume bar
-        volumeBar.addEventListener("change", function() {
+        volumeBar.addEventListener("change", function(e) {
             // Update the video volume
+           e.preventDefault();
+            const value = (100 / video.volume) * volumeBar.value;
+           
             video.volume = volumeBar.value;
+            console.log(value);
+            volumeBar.style.background = `linear-gradient(90deg, #E01F3D ${value}%, #333333 ${value}%)`;
+
         });
     
              

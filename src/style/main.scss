@@ -17,9 +17,8 @@ $z-fixed-menu: 100;
 $z-fullscreen-menu: 1000;
 $z-modal: 500;
 
-@import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans&family=Play:wght@400;700&display=swap');
-@import "./normalize.scss";
 
+@import "./normalize.scss";
 @import "../style/media.scss";
 @import "../style/bloks/base.scss";
 @import "../style/bloks/mixins.scss";
